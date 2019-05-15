@@ -1,5 +1,7 @@
 # Ride For Life
 
+## Description
+
 SAFE serves mothers in Uganda to improve maternal and child survival. One of the biggest obstacles women face while pregnant is getting to a health facility to safely deliver. Most people do not own a car or a motorcycle, and a majority live greater than 5 km from a health center (an hour by foot). Can you imagine trying to walk an hour on foot when you were pregnant, and in labor? SAFE provides motorcycle ambulances to improve this problem, but mothers have a hard time contacting them in time. This app identifies and sends a text to the nearest motorcycle ambulance driver.
  
  
@@ -13,3 +15,4 @@ SAFE serves mothers in Uganda to improve maternal and child survival. One of the
  
  Stretch: Allow drivers to upload a picture to their profile page. Allow a message to be sent to a driver when a user clicks request.
  
+ Marketing website development Trello board: (https://trello.com/b/lKMwq587/ride-for-life)[https://trello.com/b/lKMwq587/ride-for-life]
