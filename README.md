@@ -15,4 +15,4 @@ SAFE serves mothers in Uganda to improve maternal and child survival. One of the
  
  Stretch: Allow drivers to upload a picture to their profile page. Allow a message to be sent to a driver when a user clicks request.
  
- Marketing website development Trello board: (https://trello.com/b/lKMwq587/ride-for-life)[https://trello.com/b/lKMwq587/ride-for-life]
+ Marketing website development Trello board: https://trello.com/b/lKMwq587/ride-for-life
