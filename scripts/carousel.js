@@ -62,3 +62,6 @@ class Carousel {
 		}
 	}
 }
+
+let carouselElement = document.querySelector('.carousel');
+let carousel = new Carousel(carouselElement);
