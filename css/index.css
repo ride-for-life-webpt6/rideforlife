@@ -126,9 +126,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-h1 {
-  text-transform: capitalize;
-}
 header {
   background-color: #0c0a08;
   width: 100%;
@@ -149,7 +146,58 @@ nav a {
   font-size: 1.6rem;
   padding-right: 10px;
 }
+footer {
+  background-color: #0c0a08;
+  height: 65px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .fab {
+  color: #ffffff;
+  font-size: 2.6rem;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+footer .footerSpace {
+  max-width: 800px;
+}
+h1 {
+  text-transform: capitalize;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 5rem;
+  text-transform: uppercase;
+  padding-top: 50px;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+}
 .intro {
-  height: 100%;
-  width: 100%;
+  display: inline-block;
+  width: 800px;
+  background-color: aqua;
+}
+.introQuote {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1.45rem;
+  text-transform: uppercase;
+  padding-bottom: 10%;
+}
+h3 {
+  font-family: 'Fjalla One', sans-serif;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+.driverRider {
+  font-family: 'Fjalla One', sans-serif;
+  text-transform: uppercase;
+  font-size: 4rem;
+  text-decoration: none;
+}
+.driverRiderWrapper {
+  display: flex;
+  justify-content: space-around;
 }
