@@ -11,7 +11,8 @@ class Carousel {
 		this.leftBtn = this.carousElement.querySelector('.left-button');
 		this.rightBtn = this.carousElement.querySelector('.right-button');
 		this.imageArray = this.carousElement.querySelectorAll('img');
-		this.hideImages();
+		// css will set all images in carousel to display: none
+		
 		// set this.currentImg and this.currentIndex to that of the first image
 		this.setCurrentImgIndexTo(0);
 	}
