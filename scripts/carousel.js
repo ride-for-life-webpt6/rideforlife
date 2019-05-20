@@ -11,22 +11,38 @@ class Carousel {
 		this.leftBtn = this.carousElement.querySelector('.left-button');
 		this.rightBtn = this.carousElement.querySelector('.right-button');
 		this.imageArray = this.carousElement.querySelectorAll('img');
-		this.currentImg = this.imageArray[0]; // start with first one
-		this.currentIndex = 0; // always update currentIndex simultaneously with currentImg
+		this.hideImages();
+		// set this.currentImg and this.currentIndex to that of the first image
+		this.setCurrentImgIndexTo(0);
 	}
-		/*
-		class methods:
-		- move left - subtract one from index, reassign currentImg to images[newIndex]
-		- move right - add one to index, reassign currentImg to images[newIndex]
-		
-		- isAtStart - does images.indexOf(currentImg) == 0
-			- if true and moving left, call wrapLeft
-		- isAtEnd - does images.indexOf(currentImg) == images.length - 1
-			- if true and moving right, call wrapRight
-		
-		- wrapLeft - change currentImg from first index to last index
-		- wrapRight - change currentImg from last index to first
-		*/
+
+	/*
+	class methods:
+	- move left - subtract one from index, reassign currentImg to images[newIndex]
+	- move right - add one to index, reassign currentImg to images[newIndex]
+	
+	- isAtStart - does images.indexOf(currentImg) == 0
+		- if true and moving left, call wrapLeft
+	- isAtEnd - does images.indexOf(currentImg) == images.length - 1
+		- if true and moving right, call wrapRight
+	
+	- wrapLeft - change currentImg from first index to last index
+	- wrapRight - change currentImg from last index to first
+	*/
+
+	hideImages() {
+		let arr = Array.from(this.imageArray);
+
+		arr.forEach((imge) => {
+			imge.style.display = "none"
+		});
+	}
+
+	set currentImg(img) {
+		this.hideImages();
+		this._currentImg = img;
+		this._currentImg.style.display = "flex";
+	}
 
 	setCurrentImgIndexTo(newIndex) {
 		// always update currentIndex simultaneously with currentImg
