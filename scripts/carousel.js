@@ -15,6 +15,14 @@ class Carousel {
 		
 		// set this.currentImg and this.currentIndex to that of the first image
 		this.setCurrentImgIndexTo(0);
+
+		this.leftBtn.addEventListener('click', (e) => {
+			this.moveLeft();
+		});
+
+		this.rightBtn.addEventListener('click', (e) => {
+			this.moveRight();
+		});
 	}
 
 	/*
@@ -31,6 +39,12 @@ class Carousel {
 	- wrapRight - change currentImg from last index to first
 	*/
 
+	setCurrentImgIndexTo(newIndex) {
+		// always update currentIndex simultaneously with currentImg
+		this.currentImg = this.imageArray[newIndex];
+		this.currentIndex = newIndex;
+	}
+
 	hideImages() {
 		let arr = Array.from(this.imageArray);
 
@@ -45,12 +59,6 @@ class Carousel {
 		this._currentImg.style.display = "flex";
 	}
 
-	setCurrentImgIndexTo(newIndex) {
-		// always update currentIndex simultaneously with currentImg
-		this.currentImg = this.imageArray[newIndex];
-		this.currentIndex = newIndex;
-	}
-	
 	isAtStart() {
 		return (this.currentIndex === 0);
 	}
@@ -62,20 +70,20 @@ class Carousel {
 	moveLeft(){
 		if (this.isAtStart() === false) {
 			// if not at start, move left 1
-			setCurrentImgIndexTo(this.currentIndex - 1)
+			this.setCurrentImgIndexTo(this.currentIndex - 1)
 		} else if (this.isAtStart() === true) {
 			// if at start, move to end
-			setCurrentImgIndexTo(this.imageArray.length - 1)
+			this.setCurrentImgIndexTo(this.imageArray.length - 1)
 		}
 	}
 
 	moveRight(){
 		if (this.isAtEnd() === false) {
 			// if not at end, move right 1
-			setCurrentImgIndexTo(this.currentIndex + 1)
+			this.setCurrentImgIndexTo(this.currentIndex + 1)
 		} else if (this.isAtEnd() === true) {
 			// if at end, move to start
-			setCurrentImgIndexTo(0)
+			this.setCurrentImgIndexTo(0);
 		}
 	}
 }
