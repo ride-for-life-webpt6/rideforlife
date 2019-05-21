@@ -209,6 +209,21 @@ h3 {
   display: flex;
   justify-content: space-around;
 }
-.carousel .img {
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel img {
+  max-width: 800px;
   display: none;
+}
+.left-button,
+.right-button {
+  font-size: 3rem;
+  background: #0c0a08;
+  color: #ffffff;
+  display: flex;
+  padding-bottom: 0.38rem;
+  border-radius: 0.2rem;
 }

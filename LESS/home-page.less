@@ -57,7 +57,24 @@ h3 {
 }
 
 .carousel {
-	.img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	img {
+		max-width: 800px;
 		display: none;
 	}
+}
+
+.left-button, .right-button {
+	font-size: 3rem;
+	background: @almostblack;
+	color: @white;
+	display: flex;
+	// align-items: center;
+	padding-bottom: .38rem;
+	border-radius: .2rem;
+	// flex-grow: .05;
+	// text-align: center;
 }
