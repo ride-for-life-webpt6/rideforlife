@@ -126,6 +126,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+img {
+  max-width: 800px;
+}
 header {
   background-color: #0c0a08;
   width: 100%;
@@ -209,6 +212,20 @@ h3 {
   display: flex;
   justify-content: space-around;
 }
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .carousel .img {
   display: none;
+}
+.left-button,
+.right-button {
+  font-size: 3rem;
+  background: #0c0a08;
+  color: #ffffff;
+  display: flex;
+  padding-bottom: 0.38rem;
+  border-radius: 0.2rem;
 }
