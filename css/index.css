@@ -251,9 +251,6 @@ h3 {
 .description {
   color: #0c0a08;
   max-width: 500px;
-  padding: 15%;
-  line-height: 1.5rem;
-  font-size: 1rem;
 }
 .about-wrapper {
   display: flex;
@@ -262,8 +259,6 @@ h3 {
   max-height: 20vh;
 }
 .icon-triad {
-  padding: 5%;
-  font-size: 10rem;
   display: flex;
   justify-content: space-evenly;
 }
@@ -271,4 +266,11 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.icon-wrapper i {
+  padding: 5%;
+  font-size: 10rem;
+}
+.about h1 {
+  padding-top: 0px;
 }
