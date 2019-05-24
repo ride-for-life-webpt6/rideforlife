@@ -231,6 +231,8 @@ h3 {
   display: flex;
   padding-bottom: 0.38rem;
   border-radius: 0.2rem;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 .information h2 {
   color: #0c0a08;
@@ -250,4 +252,65 @@ h3 {
   width: 90%;
   margin: 0 auto;
   padding: 15px;
+}
+.buttonWrapper {
+  display: flex;
+  justify-content: center;
+}
+.description {
+  color: #0c0a08;
+  max-width: 500px;
+  padding: 15%;
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-height: 20vh;
+}
+.icon-triad {
+  padding: 5%;
+  font-size: 10rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0c0a08;
+  width: 150px;
+  height: 50px;
+  font-family: 'Fjalla One', sans-serif;
+  text-transform: uppercase;
+  border-radius: 10px;
+  letter-spacing: 1px;
+}
+.button a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.buttonhover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #404040;
+  width: 150px;
+  height: 50px;
+  font-family: 'Fjalla One', sans-serif;
+  text-transform: uppercase;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  margin: 15px;
+}
+.buttonhover a {
+  text-decoration: none;
+  color: #ffffff;
 }
