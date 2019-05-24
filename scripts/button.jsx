@@ -1,16 +1,20 @@
 class Button {
     constructor (buttonElement) {
         this.buttonElement = buttonElement;
-        this.buttonDiv = this.buttonElement.querySelector('.buttondiv');
-        this.nonhover = this.buttonElement.querySelector('.button');
-        this.hover = this.buttonElement.querySelector('.buttonhover');
-        this.hover.style.display = none;
-        this.button.addEventListener('mouseenter', () => { this.toggleContent() })
+        this.buttonDiv = document.querySelector('.button');
+        this.buttonDiv.classList.remove('buttonhover');
+        this.buttonDiv.addEventListener('mouseenter', () => { this.add() })
+        this.buttonDiv.addEventListener('mouseleave', () => { this.remove() })
     }
-    toggleContent() {
-        this.content.classList.toggleContent('buttonhover');
+
+    add() {
+        this.buttonDiv.classList.add('buttonhover');
+    }
+
+    remove() {
+        this.buttonDiv.classList.remove('buttonhover');
     }
 }
 
-let buttonElement = document.querySelector('.buttondiv');
+let buttonElement = document.querySelector('.button');
 let button = new Button(buttonElement);
