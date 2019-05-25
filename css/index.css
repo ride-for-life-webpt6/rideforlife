@@ -321,9 +321,18 @@ h3 {
     height: 10px;
   }
 }
-.description {
-  color: #0c0a08;
-  max-width: 500px;
+.about h1 {
+  padding-top: 0px;
+}
+@media (max-width: 500px) {
+  .about h1 {
+    text-align: center;
+    font-size: 5rem;
+  }
+}
+nav,
+section {
+  max-width: 100%;
 }
 .about-wrapper {
   display: flex;
@@ -333,7 +342,14 @@ h3 {
 }
 .icon-triad {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .icon-triad {
+    flex-direction: column;
+  }
 }
 .icon-wrapper {
   display: flex;
@@ -341,11 +357,26 @@ h3 {
   align-items: center;
 }
 .icon-wrapper i {
-  padding: 5%;
+  padding: 10%;
+  padding-left: 0;
   font-size: 10rem;
 }
-.about h1 {
-  padding-top: 0px;
+@media (max-width: 500px) {
+  .icon-wrapper i {
+    padding: 5% 1% 1% 0;
+    font-size: 6rem;
+  }
+}
+.description {
+  color: #0c0a08;
+  max-width: 300px;
+  padding: 1.5rem;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .description {
+    max-width: 50%;
+  }
 }
 .button {
   display: flex;
