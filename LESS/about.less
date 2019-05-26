@@ -1,9 +1,16 @@
-.description {
-	color: @almostblack;
-	max-width: 500px;
-	padding: 15%;
-	line-height: 1.5rem;
-	font-size: 1rem;
+.about {
+	h1 {
+		padding-top: 0px;
+
+		@media @phone {
+			text-align: center;
+			font-size: 5rem;
+		}
+	}
+}
+
+nav, section {
+	max-width: 100%;
 }
 
 .about-wrapper {
@@ -14,14 +21,40 @@
 }
 
 .icon-triad {
-	padding: 5%;
-	font-size: 10rem;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
+	max-width: 700px;
+	margin: 0 auto;
+
+	@media @phone {
+		flex-direction: column;
+	}
 }
 
 .icon-wrapper {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	
+	i {
+		padding: 10%;
+		padding-left: 0;
+		font-size: 10rem;
+
+		@media @phone {
+			padding: 5% 1% 1% 0;
+			font-size: 6rem;
+		}
+	}
+}
+
+.description {
+	color: @almostblack;
+	max-width: 300px;
+	padding: 1.5rem;
+	text-align: center;
+
+	@media @phone {
+		max-width: 50%;
+	}
 }
